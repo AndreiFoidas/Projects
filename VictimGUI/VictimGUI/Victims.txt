@@ -1,0 +1,4 @@
+Stefan,Medias,18,image.jpg
+Andrei,Medias,19,image.jpg
+Harry,Potter,100,image.png
+ew,234,12,asd

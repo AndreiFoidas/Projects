@@ -1,0 +1,18 @@
+
+Program 1:
+ExecutionStack:
+print(9 / 0)
+
+SymbolTable:
+
+OutputList:
+
+FileTable:
+
+MemoryHeap:
+
+BarrierTable:
+
+
+---------------------------------------------------------------------------
+

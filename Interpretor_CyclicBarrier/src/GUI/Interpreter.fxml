@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="470.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InterpreterController">
+   <children>
+      <TableView fx:id="heapTableView" layoutX="14.0" layoutY="34.0" prefHeight="180.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="heapTableViewC1" prefWidth="100.0" text="C1" />
+          <TableColumn fx:id="heapTableViewC2" prefWidth="100.0" text="C2" />
+        </columns>
+      </TableView>
+      <ListView fx:id="outputListView" layoutX="214.0" layoutY="34.0" prefHeight="180.0" prefWidth="200.0" />
+      <ListView fx:id="fileTableListView" layoutX="414.0" layoutY="34.0" prefHeight="180.0" prefWidth="200.0" />
+      <ListView fx:id="programStateListView" layoutX="14.0" layoutY="244.0" onMouseClicked="#setSelectedProgram" prefHeight="180.0" prefWidth="200.0" />
+      <TableView fx:id="symbolTableView" layoutX="214.0" layoutY="244.0" prefHeight="180.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="symbolTableViewC1" prefWidth="100.0" text="C1" />
+          <TableColumn fx:id="symbolTableViewC2" prefWidth="100.0" text="C2" />
+        </columns>
+      </TableView>
+      <ListView fx:id="executionStackListView" layoutX="414.0" layoutY="244.0" prefHeight="180.0" prefWidth="200.0" />
+      <Button fx:id="runOneStepButton" layoutX="509.0" layoutY="436.0" mnemonicParsing="false" onMousePressed="#runOneStep" prefHeight="25.0" prefWidth="105.0" text="Run One Step" />
+      <TextField fx:id="numberOfProgramStates" layoutX="14.0" layoutY="436.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="83.0" layoutY="14.0" prefHeight="17.0" prefWidth="61.0" text="Heap Table" />
+      <Label layoutX="293.0" layoutY="14.0" prefHeight="17.0" prefWidth="45.0" text="Output" />
+      <Label layoutX="489.0" layoutY="14.0" prefHeight="17.0" prefWidth="61.0" text="File Table" />
+      <Label layoutX="281.0" layoutY="227.0" prefHeight="17.0" prefWidth="82.0" text="Symbol Table" />
+      <Label layoutX="68.0" layoutY="227.0" prefHeight="17.0" prefWidth="113.0" text="Program States" />
+      <Label layoutX="476.0" layoutY="227.0" prefHeight="17.0" prefWidth="113.0" text="Execution Stack" />
+      <Label layoutX="759.0" layoutY="124.0" text="Barrier Table" />
+      <TableView fx:id="barrierTableView" layoutX="642.0" layoutY="144.0" prefHeight="200.0" prefWidth="300.0">
+        <columns>
+          <TableColumn fx:id="barrierTableViewC1" prefWidth="100.0" text="index" />
+          <TableColumn fx:id="barrierTableViewC2" prefWidth="100.0" text="value" />
+            <TableColumn fx:id="barrierTableViewC3" prefWidth="100.0" text="list of values" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

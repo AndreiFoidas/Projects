@@ -1,0 +1,35 @@
+program term ar_expr pow_expr add_expr sub_expr mul_expr div_expr mod_expr term_list statements operation compound_statement single_statement simple_statement structure_statement declaration_statement primitive_declaration array_declaration type assignment_statement conditional_statement loop_statement read_statement write_statement relational_expression relation expression arithmetic1 arithmetic2 multiply1 multiply2 arithmetic_operator logical_operator
+START END. ; int char string bool identifier constant = + - * / % ^ < <= => > == != ! AND OR true false ( ) [ ] { } read write if else while struct , add sub mul div mod pow
+program
+
+program -> START statements END.
+statements -> single_statement | statements single_statement
+compound_statement -> { statements }
+single_statement -> simple_statement ; | structure_statement
+simple_statement -> declaration_statement | assignment_statement | read_statement | write_statement
+structure_statement -> compound_statement | conditional_statement | loop_statement
+
+declaration_statement -> primitive_declaration | array_declaration
+primitive_declaration -> type identifier
+array_declaration -> type [ constant ] identifier
+type -> int | char | string | bool
+
+assignment_statement -> identifier = ar_expr
+conditional_statement -> if ( relational_expression ) single_statement else single_statement
+loop_statement -> while ( relational_expression ) single_statement
+read_statement -> read ( identifier )
+write_statement -> write ( term_list )
+
+operation -> + | - | * | / | % | ^
+relational_expression -> ar_expr relation ar_expr | ! relational_expression
+term_list -> term | term_list , term
+relation -> < | <= | => | > | == | !=
+term -> identifier | constant | true | false
+
+add_expr -> add ( ar_expr , ar_expr )
+sub_expr -> sub ( ar_expr , ar_expr )
+mul_expr -> mul ( ar_expr , ar_expr )
+div_expr -> div ( ar_expr , ar_expr )
+mod_expr -> mod ( ar_expr , ar_expr )
+pow_expr -> pow ( ar_expr , ar_expr )
+ar_expr -> add_expr | sub_expr | mul_expr | div_expr | mod_expr | term

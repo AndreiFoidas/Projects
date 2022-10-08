@@ -1,0 +1,26 @@
+START
+	int a;
+	int b;
+	int c;
+	read(a); read(b); read(c);
+	int maxim;
+	if (a > b)
+	{
+		maxim = a;
+    }
+	else
+	{
+		maxim = b;
+	}
+	if (c > maxim)
+	{
+		maxim = c;
+	}
+	else
+	{
+	    c = add(0,mul(sub(0,5),4));
+	}
+	string text;
+	text = "Maximum is: ";
+	write(text); write(maxim);
+END.

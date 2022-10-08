@@ -1,0 +1,16 @@
+START
+    int n;
+    read(n);
+    int sum;
+    sum = 0;
+    int i;
+    i = 0;
+    while (i < n)
+    {
+        int nr;
+        read(nr);
+        sum = add(sum,nr);
+        i = add(i,1);
+    }
+    write(sum);
+END.

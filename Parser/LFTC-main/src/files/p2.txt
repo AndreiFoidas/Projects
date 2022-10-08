@@ -1,0 +1,13 @@
+START
+    int a;
+    int b;
+    read(a); read(b);
+    while (b != 0)
+    {
+        int r;
+        r = mod(a,b);
+        a = b;
+        b = r;
+    }
+    write(a);
+END.

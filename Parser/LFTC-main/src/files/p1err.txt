@@ -1,0 +1,17 @@
+START
+    int a_;
+    int bas;
+    int 2c;
+    c = bas + 1000;
+    read(a);
+    b = -0;
+    b = 10-3;
+    b = 012;
+    b = 'abc';
+    b = "ab;
+    while (a >= b)
+    {
+        a = a + 1;
+    }
+    write(a);
+END.

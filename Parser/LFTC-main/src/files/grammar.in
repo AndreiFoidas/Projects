@@ -1,0 +1,30 @@
+program statements single_statement declaration_statement primitive_declaration array_declaration type assignment_statement conditional_statement loop_statement read_statement write_statement relational_expression relation expression arithmetic_operator logical_operator term constant structure_declaration declaration_list
+START END. ; int char string bool identifier = + - * / % < <= => > == != ! AND OR ( ) [ ] { } read write if else while struct
+program
+
+program -> START statements END.
+statements -> single_statement | single_statement statements
+single_statement -> declaration_statement | assignment_statement | conditional_statement | loop_statement | read_statement | write_statement | structure_declaration
+
+declaration_statement -> primitive_declaration | array_declaration ;
+primitive_declaration -> type identifier
+array_declaration -> type identifier [ constant ]
+type -> int | char | string | bool
+
+assignment_statement -> identifier = expression ;
+conditional_statement -> if ( relational_expression ) { statements } | if ( relational_expression ) { statements } else { statements }
+loop_statement -> while ( relational_expression ) { statements }
+read_statement -> read ( identifier ) ;
+write_statement -> write ( expression ) ;
+
+relational_expression -> expression relation expression | expression | relational_expression logical_operator relational_expression | ! relational_expression
+relation -> < | <= | => | > | == | !=
+expression -> expression arithmetic_operator term | term
+arithmetic_operator -> + | - | * | / | %
+logical_operator -> AND | OR
+term -> ( expression ) | identifier | constant
+constant -> int | string | char | bool
+
+structure_declaration -> struct identifier { declaration_list } ;
+declaration_list -> declaration_statement | declaration_statement declaration_list
+

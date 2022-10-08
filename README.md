@@ -1,3 +1,5 @@
+# FootballManager in Java | 2022
+Implemented a CRUD Angular application in Java using Spring that manages football teams and can also assign players to matches and teams and filter entities on various criteria.
 # Photo Editor in Python - Design Patterns Showcase | 2022
 Developed an application in python that can surf the internet and download images that the user requests but also let's the user edit and modify the photos ny applying filters and drawing on them. The design patterns used in this project are: Creational - Singleton; Structural - Decorato, Facade; Behavioural - Strategy, Command.
 # Resaerch Project - Is the evolution of search algorithms finished? | 2021

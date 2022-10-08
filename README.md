@@ -1,4 +1,4 @@
-# Resaerch Project - Are search algorithms still evolving? | 2021
+# Resaerch Project - Is the evolution of search algorithms finished? | 2021
 The main purpose of this paper is to emphasize on the idea that search algorithms are always on the verge of evolution. In this paper we will be using Amazon’s OpenSearch and Elasticsearch services. To showcase one of the most powerful search engines we are using a small dataset of 10.000 elements and executing some test queries. The tests will be applied to distinct implementations and versions of the Elasticsearch principle with the goal of presenting the way this algorithm becomes more efficient with time.
 # Programming Language Scanner and Parser in Java | 2021
 Created a Scanner (lexical analyzer) and Parser (LR0 parser) in Java that can perform on a mini-programming language and can recursively built a parse tree as output. 

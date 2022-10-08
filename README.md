@@ -1,3 +1,5 @@
+# Programming Language Scanner and Parser in Java | 2021
+Created a Scanner (lexical analyzer) and Parser (LR0 parser) in Java that can perform on a mini-programming language and can recursively built a parse tree as output. 
 # Toy Language Interpreter in Java | 2020
 Implemented a multi-threaded toy language interpreter in Java using layered architecture (MVC) and which has a GUI built using SceneBuilder. Through this project I was able to understand better the process required to implement an interpreter for a new programming language as well as how interpreters and compilers work.
 # Entity manager – Object Oriented Programming Project | 2020

@@ -1,0 +1,48 @@
+2022-04-28 19:14:24.129972
+Logger has been initialised.
+Saved picture of uranus
+
+Drew Line with Text on: photos\220px-Uranus_as_seen_by_NASA%27s_Voyager_2_%28remastered%29.png
+
+Filtered photos\220px-Uranus_as_seen_by_NASA%27s_Voyager_2_%28remastered%29.png with Unsharp Mask Filter
+
+Filtered photos\220px-Uranus_as_seen_by_NASA%27s_Voyager_2_%28remastered%29.png with Median Filter
+
+Filtered photos\220px-Uranus_as_seen_by_NASA%27s_Voyager_2_%28remastered%29.png with Gaussian Blur Filter
+
+Exiting...
+
+2022-05-04 21:28:00.550932
+Logger has been initialised.
+Saved picture of bird
+
+Drew Line with Monochrome Filter on: photos\300px-Bird_Diversity_2013.png
+
+Filtered photos\50px-British_birds_in_their_haunts_%28Cuculus_canorus%29.jpg with Median Filter
+
+Filtered photos\300px-Bird_Diversity_2013.png with Unsharp Mask Filter
+
+Saved picture of bank
+
+Drew Ellipse with Text on: photos\220px-Bank_of_England_Charter_sealing_1694.jpg
+
+Filtered photos\220px-Bank.Pokhara.JPG with Median Filter
+
+Exiting...
+
+2022-05-05 08:55:00.374072
+Logger has been initialised.
+Saved picture of bird
+
+Exiting...
+
+2022-05-05 09:06:06.347148
+Logger has been initialised.
+Saved picture of cat
+
+Drew Line with Text on: photos\260px-Cat_poster_1.jpg
+
+Filtered photos\220px-Scheme_cat_anatomy.svg.png with Unsharp Mask Filter
+
+Exiting...
+

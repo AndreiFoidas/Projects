@@ -1,0 +1,20 @@
+{ "index" : { "_index": "movies", "_type": "movie", "_id" : "0" } }
+{"director": "Ronald Elliott", "genre": ["clip", "picking"], "year": 1871, "actors": ["Joshua Meler", "Michael Gonzales", "Kathryn Hollis"], "title": "martial worlds"}
+{ "index" : { "_index": "movies", "_type": "movie", "_id" : "1" } }
+{"director": "Stella Smith", "genre": ["aye", "images"], "year": 1755, "actors": ["Deon Bock", "Francis Alexander", "Ida Conrad"], "title": "technical resume"}
+{ "index" : { "_index": "movies", "_type": "movie", "_id" : "2" } }
+{"director": "Jonathon Allison", "genre": ["connectivity", "tunisia"], "year": 1704, "actors": ["Angela Helms", "Phyllis Lawrence", "Linda Roberts"], "title": "dividend debut"}
+{ "index" : { "_index": "movies", "_type": "movie", "_id" : "3" } }
+{"director": "Larry Boris", "genre": ["escorts", "implied"], "year": 1933, "actors": ["Robert Moorehead", "Dorothy Sheridan", "Peter Mcgrath"], "title": "appreciate ie"}
+{ "index" : { "_index": "movies", "_type": "movie", "_id" : "4" } }
+{"director": "Tabitha Huertas", "genre": ["keep", "lift"], "year": 1714, "actors": ["Eric Wilson", "Lisa Harris", "Peter Young"], "title": "especially computing"}
+{ "index" : { "_index": "movies", "_type": "movie", "_id" : "5" } }
+{"director": "Roy Fleming", "genre": ["emirates", "dice"], "year": 1909, "actors": ["Oscar Holmes", "Robert Renfroe", "Arthur Hayes"], "title": "ciao buy"}
+{ "index" : { "_index": "movies", "_type": "movie", "_id" : "6" } }
+{"director": "Robert Moore", "genre": ["failure", "supplement"], "year": 1926, "actors": ["James Hughes", "Naomi Warren", "Eugene Hill"], "title": "lexus less"}
+{ "index" : { "_index": "movies", "_type": "movie", "_id" : "7" } }
+{"director": "Nathan Purvis", "genre": ["tulsa", "reducing"], "year": 1724, "actors": ["Joyce Brady", "Sandra Kunkel", "James Harritt"], "title": "matches chapel"}
+{ "index" : { "_index": "movies", "_type": "movie", "_id" : "8" } }
+{"director": "Odis Bentley", "genre": ["configuration", "qualified"], "year": 1753, "actors": ["Kevin Stride", "Christopher Ortiz", "Kimberly Mcmillan"], "title": "animated holocaust"}
+{ "index" : { "_index": "movies", "_type": "movie", "_id" : "9" } }
+{"director": "Clara Navarro", "genre": ["configured", "approx"], "year": 1845, "actors": ["Guadalupe Roach", "Kevin Felts", "Joe Kern"], "title": "train saw"}

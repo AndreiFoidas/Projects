@@ -1,4 +1,4 @@
-# Photo Editor in Python - Design Patterns Showcase | 2021
+# Photo Editor in Python - Design Patterns Showcase | 2022
 Developed an application in python that can surf the internet and download images that the user requests but also let's the user edit and modify the photos ny applying filters and drawing on them. The design patterns used in this project are: Creational - Singleton; Structural - Decorato, Facade; Behavioural - Strategy, Command.
 # Resaerch Project - Is the evolution of search algorithms finished? | 2021
 The main purpose of this paper is to emphasize on the idea that search algorithms are always on the verge of evolution. In this paper we will be using Amazon’s OpenSearch and Elasticsearch services. To showcase one of the most powerful search engines we are using a small dataset of 10.000 (dataset created by myself using a python script that can generate random homogeneous data) elements and executing some test queries. The tests will be applied to distinct implementations and versions of the Elasticsearch principle with the goal of presenting the way this algorithm becomes more efficient with time.

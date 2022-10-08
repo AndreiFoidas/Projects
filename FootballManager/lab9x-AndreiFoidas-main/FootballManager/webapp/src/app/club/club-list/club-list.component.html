@@ -1,0 +1,16 @@
+
+<h2>Clubs</h2>
+
+<label for="term">Filter: </label>
+<input id="term" #termInput placeholder="Type here...">
+<button (click)="filterByOwner(termInput.value)">Filter by Owner</button>
+<button (click)="filterByCountry(termInput.value)">Filter by Country</button>
+<br>
+<button (click)="getClubs()">All</button>
+<button (click)="reportMaxBudget()">Report Max Budget </button>
+<button (click)="sortByName()">Sort By Name </button>
+
+<ul class="clubs">
+  <li *ngFor="let club of clubs">
+    <span class="badge">{{club.id}}</span> {{club.name}}, {{club.country}}, {{club.budget}}, {{club.ownerName}}, {{club.managerName}}, {{club.stadiumName}}
+</ul>

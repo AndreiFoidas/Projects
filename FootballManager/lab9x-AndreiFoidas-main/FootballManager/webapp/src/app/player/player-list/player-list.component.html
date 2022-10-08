@@ -1,0 +1,19 @@
+
+<h2>Players</h2>
+
+<div class="form-inline">
+  <label for="term">Filter: </label>
+  <select style="width: 10em" class="form-control" #termInput id="term" required>
+    <option *ngFor="let pos of positions" [value]="pos">{{pos}}</option>
+  </select>
+  <button (click)="filterByMainPosition(termInput.value)">Filter by Main Position</button>
+</div>
+<br>
+<button (click)="getPlayers()">All</button>
+<button (click)="reportYoungestPlayer()">Report Youngest Player</button>
+<button (click)="sortByName()">Sort By Name</button>
+
+<ul class="players">
+  <li *ngFor="let player of players">
+    <span class="badge">{{player.id}}</span> {{player.playerName}}, {{player.birthday}}, {{player.wage}}, {{player.clubID}}, {{player.mainPosition}}
+</ul>

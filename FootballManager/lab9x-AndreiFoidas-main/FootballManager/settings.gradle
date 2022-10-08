@@ -1,0 +1,5 @@
+rootProject.name = 'FootballManager'
+include 'Core'
+include 'Client'
+include 'Web'
+

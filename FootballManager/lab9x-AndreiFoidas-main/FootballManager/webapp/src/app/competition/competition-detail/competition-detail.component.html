@@ -1,0 +1,40 @@
+
+<div *ngIf="competition">
+
+  <h2>{{competition.id}}-{{competition.name | uppercase}} Details</h2>
+
+  <form [formGroup]="competitionForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label>Name:</label>
+      <input type="text" class="form-control" formControlName="name">
+      <span class="text-danger"
+            *ngIf="competitionFormControls.name.errors?.required || competitionFormControls.name.errors?.minLength(3)">
+        Name should have at least 3 characters!
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label>Prize Pool:</label>
+      <input type="number" class="form-control" formControlName="prizePool">
+      <span class="text-danger"
+            *ngIf="competitionFormControls.prizePool.errors?.required || competitionFormControls.prizePool.errors?.min(0)">
+        Prize pool cannot be negative!
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label>First Year:</label>
+      <input type="number" class="form-control" formControlName="firstYear">
+      <span class="text-danger"
+            *ngIf="competitionFormControls.firstYear.errors?.required || competitionFormControls.firstYear.errors?.min(1800)">
+        Last year cannot be smaller than 1800!
+      </span>
+
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!competitionForm.valid">Submit</button>
+    <button (click)="goBack()" type="submit" class="btn btn-success">Back</button>
+  </form>
+
+</div>

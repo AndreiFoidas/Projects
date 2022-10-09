@@ -1,3 +1,5 @@
+#See also:
+[Bachelor's Thesis](https://github.com/AndreiFoidas/BachelorsThesis)
 # FootballManager in Java | 2022
 Implemented a CRUD Angular application in Java using Spring that manages football teams and can also assign players to matches and teams and filter entities on various criteria.
 # Photo Editor in Python - Design Patterns Showcase | 2022

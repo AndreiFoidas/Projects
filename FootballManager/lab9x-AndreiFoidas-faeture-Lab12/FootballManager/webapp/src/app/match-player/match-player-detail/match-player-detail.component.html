@@ -1,0 +1,34 @@
+
+<div *ngIf="matchPlayer">
+  <form [formGroup]="matchPlayerForm" (ngSubmit)="save()">
+
+    <div class="form-group">
+      <label>Match: {{matchPlayer.match.id}} - {{matchPlayer.match.stadiumName}}</label>
+    </div>
+    <div class="form-group">
+      <label>Player: {{matchPlayer.player.id}} - {{matchPlayer.player.playerName}}</label>
+    </div>
+
+    <div class="form-group">
+      <label>Goals Scored:</label>
+      <input type="number" class="form-control" formControlName="goalsScored">
+      <span class="text-danger"
+            *ngIf="matchPlayerFormControls.goalsScored.errors?.required || matchPlayerFormControls.goalsScored.errors?.min(0)">
+        Goals scored should be at least 0!
+      </span>
+    </div>
+
+    <div class="form-group">
+    <label>Minutes Played:</label>
+    <input type="number" class="form-control" formControlName="minutesPlayed">
+    <span class="text-danger"
+          *ngIf="matchPlayerFormControls.minutesPlayed.errors?.required || matchPlayerFormControls.minutesPlayed.errors?.min(0) || matchPlayerFormControls.minutesPlayed.errors?.max(120)">
+        Minutes played should be in [0, 120]!
+      </span>
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="!matchPlayerForm.valid">Save</button>
+    <button (click)="delete()" type="submit" class="btn btn-success">Delete</button>
+    <button (click)="goBack()" type="submit" class="btn btn-success">Back</button>
+  </form>
+</div>

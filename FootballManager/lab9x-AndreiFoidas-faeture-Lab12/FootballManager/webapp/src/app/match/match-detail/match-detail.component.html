@@ -1,0 +1,81 @@
+
+<div *ngIf="match" class="container">
+
+  <h2>{{match.id}}-{{match.stadiumName | uppercase}} Details</h2>
+
+  <form (ngSubmit)="saveChanges()"  #editMatchForm="ngForm">
+    <div><span>id: </span>{{match.id}}</div>
+
+    <div class="form-group">
+      <label for="club1">Club1: {{match.club1?.id}}-{{match.club1?.name}}</label>
+      <select style="width: 10em" class="form-control" id="club1"
+              required
+              [(ngModel)]="match.club1" name="club1"
+              #club1="ngModel">
+        <option *ngFor="let club of clubs" [value]=club.id
+        [attr.selected]="match.club1?.id == club.id">{{club.id}}-{{club.name}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="club2">Club2: {{match.club2?.id}}-{{match.club2?.name}}</label>
+      <select style="width: 10em" class="form-control" id="club2"
+              required
+              [(ngModel)]="match.club2" name="club2"
+              #club2="ngModel">
+        <option *ngFor="let club of clubs" [value]=club.id>{{club.id}}-{{club.name}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input type="text" class="form-control" id="date"
+             required
+             [(ngModel)]="match.date" name="date"
+             #date="ngModel">
+      <div [hidden]="date.valid || date.pristine"
+           class="alert alert-danger">
+        Date is required!
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="stadiumName">Stadium Name:</label>
+      <input type="text" class="form-control" id="stadiumName"
+             required
+             [(ngModel)]="match.stadiumName" name="stadiumName"
+             #stadiumName="ngModel">
+      <div [hidden]="stadiumName.valid || stadiumName.pristine"
+           class="alert alert-danger">
+        Stadium Name is required!
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="competition">Competition: {{match.competition?.id}}-{{match.competition?.name}}</label>
+      <select style="width: 10em" class="form-control" id="competition"
+              required
+              [(ngModel)]="match.competition" name="competition"
+              #competition="ngModel">
+        <option *ngFor="let competition of competitions" [value]=competition.id>{{competition.id}}-{{competition.name}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="attendance">Attendance:</label>
+      <input type="number" class="form-control" id="attendance"
+             required
+             [(ngModel)]="match.attendance" name="attendance"
+             #attendance="ngModel">
+      <div [hidden]="attendance.valid || attendance.pristine"
+           class="alert alert-danger">
+        Attendance is required!
+      </div>
+    </div>
+
+    <button (click)="saveChanges()"  type="submit" class="btn btn-success"
+            [disabled]="!editMatchForm.form.valid">Update</button>
+    <button (click)="deleteMatch()" type="submit" class="btn btn-success">Delete</button>
+    <button (click)="goBack()" type="submit" class="btn btn-success">Back</button>
+  </form>
+</div>

@@ -1,0 +1,23 @@
+
+<h2>Competitions</h2>
+
+<label for="term">Filter: </label>
+<input id="term" #termInput placeholder="Type here...">
+<button (click)="filterByName(termInput.value)">Filter by Name</button>
+<br>
+<button (click)="getCompetitions()">All</button>
+<button (click)="reportBiggestPrizePool()">Report Biggest Prize Pool</button>
+
+<ul class="competitions">
+  <li *ngFor="let competition of competitions"
+      [class.selected]="competition === selectedCompetition"
+      (click)="onSelect(competition)">
+    <span class="badge">{{competition.id}}</span> {{competition.name}}
+</ul>
+
+<div *ngIf="selectedCompetition">
+  <h2>
+    {{selectedCompetition.name | uppercase}} was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>

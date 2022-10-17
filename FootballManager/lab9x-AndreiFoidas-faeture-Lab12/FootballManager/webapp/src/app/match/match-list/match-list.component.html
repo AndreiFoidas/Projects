@@ -1,0 +1,29 @@
+
+<h2>Matches</h2>
+
+<label for="term">Filter: </label>
+<input id="term" #termInput placeholder="Type here...">
+<button (click)="filterByStadiumName(termInput.value)">Filter by Stadium Name</button>
+<br>
+<button (click)="getMatches()">All</button>
+<ul class="matches">
+  <li *ngFor="let match of matches"
+    [class.selected]="match === selectedMatch"
+    (click)="onSelect(match)">
+    <span class="badge">{{match.id}}</span> {{match.stadiumName}}
+</ul>
+
+<div *ngIf="selectedMatch">
+  <h2>
+    {{selectedMatch.stadiumName | uppercase}} was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+  <button (click)="deleteMatch()">Delete</button>
+</div>
+
+<button (click)="displaySave()">New Match</button>
+
+<div *ngIf="save">
+  <app-match-new></app-match-new>
+  <button (click)="closeSave()">Close Save</button>
+</div>

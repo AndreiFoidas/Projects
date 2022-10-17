@@ -1,0 +1,32 @@
+
+<h2>MatchPlayers</h2>
+<!--
+<div class="form-inline">
+  <label for="term">Filter: </label>
+  <select style="width: 10em" class="form-control" #termInput id="term" required>
+    <option *ngFor="let pos of positions" [value]="pos">{{pos}}</option>
+  </select>
+  <button (click)="filterByMainPosition(termInput.value)">Filter by Main Position</button>
+</div>
+<br>
+<button (click)="getPlayers()">All</button>
+<button (click)="reportYoungestPlayer()">Report Youngest Player</button>
+<button (click)="sortByName()">Sort By Name</button>
+-->
+<button (click)="getMatchPlayers()">All</button>
+<button (click)="reportMostGoals()">Report Most Goals</button>
+<ul class="matchPlayers">
+  <li *ngFor="let matchPlayer of matchPlayers"
+    [class.selected]="matchPlayer === selectedMatchPlayer"
+    (click)="onSelect(matchPlayer)">
+    <span class="badge"></span> {{matchPlayer.match.stadiumName}}, {{matchPlayer.player.playerName}}, {{matchPlayer.goalsScored}}, {{matchPlayer.minutesPlayed}}
+</ul>
+
+<div *ngIf="selectedMatchPlayer">
+  <h2>
+    {{selectedMatchPlayer.match.stadiumName}}-{{selectedMatchPlayer.player.playerName}} was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+
+<button (click)="goToNew()">New</button>

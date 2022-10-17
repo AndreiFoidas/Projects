@@ -1,0 +1,33 @@
+
+<div class="form-group">
+  <label for="match">Match: </label>
+  <select style="width: 10em" class="form-control" id="match"
+          required
+          [(ngModel)]="modelMatchPlayer.match" name="match"
+          #match="ngModel">
+    <option *ngFor="let match of matches" [value]=match.id>{{match.id}}-{{match.stadiumName}}</option>
+  </select>
+
+  <label for="player">Player: </label>
+  <select style="width: 10em" class="form-control" id="player"
+          required
+          [(ngModel)]="modelMatchPlayer.player" name="player"
+          #player="ngModel">
+    <option *ngFor="let player of players" [value]=player.id>{{player.id}}-{{player.playerName}}</option>
+  </select>
+
+  <label for="goalsScored">Goals Scored: </label>
+  <input style="width: 10em" type="number" class="form-control" id="goalsScored"
+         required
+         [(ngModel)]="modelMatchPlayer.goalsScored" name="goalsScored"
+         #goalsScored="ngModel">
+
+  <label for="minutesPlayed">Minutes Played: </label>
+  <input style="width: 10em" type="number" class="form-control" id="minutesPlayed"
+         required
+         [(ngModel)]="modelMatchPlayer.minutesPlayed" name="minutesPlayed"
+         #minutesPlayed="ngModel">
+</div>
+
+<button (click)="addMatchPlayer()">Add</button>
+<button (click)="goBack()">Back</button>
